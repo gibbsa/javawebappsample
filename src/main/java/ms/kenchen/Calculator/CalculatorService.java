@@ -26,8 +26,8 @@ public class CalculatorService {
     @GET
     @Path("sub")
     @Produces(MediaType.APPLICATION_JSON)
-    public CalculatorResponse Add(@QueryParam("x") int x, @QueryParam("y") int y) {
-        return new CalculatorResponse(x, y, x - y);
+    public CalculatorResponse Sub(@QueryParam("x") int x, @QueryParam("y") int y) {
+        return new CalculatorResponse(x, y, x + y);
     }
 
     @GET
